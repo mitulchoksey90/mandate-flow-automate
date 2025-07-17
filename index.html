@@ -1,24 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mandate-flow-automate</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recurring Payments SaaS - Automate Collections</title>
+    <meta name="description" content="Collect recurring payments automatically with e-Mandates. No cheques, no paperwork, no hassle. NPCI compliant & RBI approved.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-decoration"></div>
+        <div class="hero-circle-1"></div>
+        <div class="hero-circle-2"></div>
+        
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-content">
+                    <!-- Trust badge -->
+                    <div class="trust-badge">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <span>NPCI Compliant & RBI Approved</span>
+                    </div>
 
-    <meta property="og:title" content="mandate-flow-automate" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+                    <!-- Main headline -->
+                    <div class="headline-section">
+                        <h1 class="main-headline">
+                            Collect Recurring Payments 
+                            <span class="gradient-text">Automatically</span>
+                        </h1>
+                        <div class="sub-headline">
+                            No Cheques, No Paperwork, No Hassle.
+                        </div>
+                    </div>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+                    <!-- Description -->
+                    <p class="hero-description">
+                        Set up e-Mandates online via Aadhaar, Debit Card or Net Banking — 
+                        fully automated reminders, retries & real-time dashboard.
+                    </p>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+                    <!-- Key benefits -->
+                    <div class="benefits-list">
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>100% Paperless Setup</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Automated Retries</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Real-time Dashboard</span>
+                        </div>
+                        <div class="benefit-item">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Zero Manual Effort</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA buttons -->
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary">
+                            Book a Free Demo
+                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        <button class="btn btn-outline">
+                            <svg class="play-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5,3 19,12 5,21"/>
+                            </svg>
+                            Watch Demo Video
+                        </button>
+                    </div>
+
+                    <!-- Social proof -->
+                    <div class="social-proof">
+                        <p class="social-proof-text">Trusted by 50+ merchants and growing</p>
+                        <div class="trust-logos">
+                            <div>RBI</div>
+                            <div>NPCI</div>
+                            <div>NACH</div>
+                            <div>e-Mandate</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Hero Image -->
+                <div class="hero-image-container">
+                    <div class="hero-image-wrapper">
+                        <img src="src/assets/hero-payment-flow.jpg" alt="Automated recurring payment flow" class="hero-image">
+                        <div class="hero-image-overlay"></div>
+                    </div>
+                    
+                    <!-- Floating stats -->
+                    <div class="floating-stat floating-stat-1">
+                        <div class="stat-label">Success Rate</div>
+                        <div class="stat-value stat-accent">99.8%</div>
+                    </div>
+                    
+                    <div class="floating-stat floating-stat-2">
+                        <div class="stat-label">Avg. Setup Time</div>
+                        <div class="stat-value stat-primary">5 mins</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Flow Section -->
+    <section class="payment-flow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How Recurring Payments Work</h2>
+                <p class="section-description">Simple, automated flow from customer setup to your bank account</p>
+            </div>
+
+            <div class="flow-container">
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="step-card">
+                            <div class="step-icon step-icon-1">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                                    <path d="M12 18h.01"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Customer Setup</h3>
+                            <p class="step-description">Customer creates e-Mandate using Aadhaar, Debit Card or Net Banking</p>
+                        </div>
+                        <div class="arrow-connector arrow-desktop">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                        <div class="arrow-connector arrow-mobile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-card">
+                            <div class="step-icon step-icon-2">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                                    <path d="M1 10h22"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Auto Debit</h3>
+                            <p class="step-description">Automated recurring payments with up to 5 retry attempts</p>
+                        </div>
+                        <div class="arrow-connector arrow-desktop">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                        <div class="arrow-connector arrow-mobile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="M12 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="flow-step">
+                        <div class="step-card">
+                            <div class="step-icon step-icon-3">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9h18v10a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
+                                    <path d="M21 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v2"/>
+                                </svg>
+                            </div>
+                            <h3 class="step-title">Your Account</h3>
+                            <p class="step-description">Funds automatically credited to your merchant bank account</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flow-background"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Effortless Collections</h2>
+                <p class="section-description">Everything you need to automate recurring payments and eliminate manual collection hassles</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">100% Paperless Setup</h3>
+                    <p class="feature-description">e-Mandate setup via Aadhaar, Debit Card or Net Banking with zero paperwork</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M1 4v6h6"/>
+                            <path d="M3.51 15a9 9 0 102.13-9.36L1 10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Auto-Retry System</h3>
+                    <p class="feature-description">Up to 5 automatic retry attempts if the first debit fails</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <path d="M14 2v6h6"/>
+                            <path d="M16 13H8"/>
+                            <path d="M16 17H8"/>
+                            <path d="M10 9H8"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">No Bounced Cheques</h3>
+                    <p class="feature-description">Eliminate cheque hassles and processing delays completely</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Smart Reminders</h3>
+                    <p class="feature-description">Automated SMS, Email, and WhatsApp reminders to maintain balance</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M18 20V10"/>
+                            <path d="M12 20V4"/>
+                            <path d="M6 20v-6"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Real-time Dashboard</h3>
+                    <p class="feature-description">Track collections, upcoming debits, failed payments with custom reports</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Account Reconciliation</h3>
+                    <p class="feature-description">Automated reconciliation saves hours of manual work</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Never Miss Due Dates</h3>
+                    <p class="feature-description">Collect recurring payments without remembering due dates</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-primary">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M8 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Perfect for Jewellers</h3>
+                    <p class="feature-description">Ideal for installment plans, EMIs, and subscription businesses</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon-accent">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13,2 3,14 12,14 11,22 21,10 12,10"/>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Zero Manual Effort</h3>
+                    <p class="feature-description">Fully automated end-to-end payment collection process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M4.93 4.93l14.14 14.14"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">No Manual Collections</h3>
+                    <p class="benefit-description">Eliminate time-consuming follow-ups and manual reminders</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                            <path d="M14 2v6h6"/>
+                            <path d="M16 13H8"/>
+                            <path d="M16 17H8"/>
+                            <path d="M10 9H8"/>
+                            <path d="M12 12l-4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">No Bounced Cheques</h3>
+                    <p class="benefit-description">Say goodbye to cheque processing delays and bank charges</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                            <circle cx="8.5" cy="7" r="4"/>
+                            <path d="M20 8v6"/>
+                            <path d="M23 11h-6"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">No Follow-up Stress</h3>
+                    <p class="benefit-description">Automated system handles all customer communications</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title">Improved Cash Flow</h3>
+                    <p class="benefit-description">Predictable, on-time payments improve your business finances</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Get started in just 3 simple steps</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Quick Setup</h3>
+                    <p class="step-description">Register your business and integrate our API in minutes</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Customer Registration</h3>
+                    <p class="step-description">Customers create e-Mandates using Aadhaar, Debit Card, or Net Banking</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Automated Collections</h3>
+                    <p class="step-description">Sit back and relax while payments are collected automatically</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard-section">
+        <div class="container">
+            <div class="dashboard-content">
+                <div class="dashboard-text">
+                    <h2 class="section-title">Real-time Dashboard & Analytics</h2>
+                    <div class="dashboard-features">
+                        <div class="dashboard-feature">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Track total collections and upcoming debits</span>
+                        </div>
+                        <div class="dashboard-feature">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Monitor failed payments and retry status</span>
+                        </div>
+                        <div class="dashboard-feature">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Generate custom reports for any date range</span>
+                        </div>
+                        <div class="dashboard-feature">
+                            <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 12l2 2 4-4"/>
+                                <circle cx="12" cy="12" r="10"/>
+                            </svg>
+                            <span>Automated account reconciliation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-image">
+                    <img src="src/assets/dashboard-mockup.jpg" alt="Dashboard interface" class="dashboard-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="use-cases-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect for Multiple Industries</h2>
+                <p class="section-description">Automate recurring collections across various business types</p>
+            </div>
+
+            <div class="use-cases-grid">
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="use-case-title">Jewellery Stores</h3>
+                    <p class="use-case-description">Automate monthly gold/diamond installment collections with zero paperwork</p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 19.5A2.5 2.5 0 016.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="use-case-title">Educational Institutes</h3>
+                    <p class="use-case-description">Collect tuition fees, coaching fees from schools, colleges, and training centers</p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7.5 8a4.5 4.5 0 119 0c0 1.5-.5 3.5-2 5l-3.5 3.5a1 1 0 01-1.4 0L6.5 13c-1.5-1.5-2-3.5-2-5"/>
+                            <circle cx="12" cy="8" r="1"/>
+                        </svg>
+                    </div>
+                    <h3 class="use-case-title">Gyms & Fitness</h3>
+                    <p class="use-case-description">Automate monthly membership fees and personal training payments</p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M2 3h20v18H2z"/>
+                            <path d="M8 21v-5a2 2 0 012-2h4a2 2 0 012 2v5"/>
+                            <path d="M7 7h.01"/>
+                            <path d="M17 7h.01"/>
+                            <path d="M7 11h.01"/>
+                            <path d="M17 11h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="use-case-title">Libraries & Subscriptions</h3>
+                    <p class="use-case-description">Collect monthly fees from toy libraries, book libraries, and subscription services</p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 21h18"/>
+                            <path d="M5 21V7l8-4v18"/>
+                            <path d="M19 21V11l-6-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="use-case-title">Real Estate</h3>
+                    <p class="use-case-description">Automate monthly EMI collections for property purchases and rent payments</p>
+                </div>
+
+                <div class="use-case-card">
+                    <div class="use-case-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            <path d="M9 12l2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="use-case-title">Insurance & Utilities</h3>
+                    <p class="use-case-description">Streamline premium collections and utility bill payments</p>
+                </div>
+            </div>
+
+            <div class="cancellation-feature">
+                <div class="cancellation-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 6L6 18"/>
+                        <path d="M6 6l12 12"/>
+                        <circle cx="12" cy="12" r="10"/>
+                    </svg>
+                </div>
+                <div class="cancellation-content">
+                    <h3 class="cancellation-title">One-Click Cancellation</h3>
+                    <p class="cancellation-description">Customers can easily cancel their mandates anytime with a single click - complete transparency and control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Section -->
+    <section class="social-proof-section">
+        <div class="container">
+            <div class="social-proof-content">
+                <h2 class="social-proof-title">Trusted by Growing Businesses</h2>
+                <div class="social-proof-stats">
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Active Merchants</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">₹2Cr+</div>
+                        <div class="stat-label">Collections Processed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.8%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24/7</div>
+                        <div class="stat-label">Support</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-description">Pay only for successful transactions - no hidden fees</p>
+            </div>
+
+            <div class="pricing-card">
+                <h3 class="pricing-title">Pay Per Transaction</h3>
+                <div class="pricing-rate">
+                    <span class="currency">₹</span>
+                    <span class="amount">3</span>
+                    <span class="period">per successful transaction</span>
+                </div>
+                <div class="pricing-features">
+                    <div class="pricing-feature">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <span>No setup fees or monthly charges</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <span>Pay only for successful collections</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <span>All features included</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <span>24/7 customer support</span>
+                    </div>
+                </div>
+                <button class="pricing-cta">Talk to Us for Custom Pricing</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="final-cta-section">
+        <div class="container">
+            <div class="final-cta-content">
+                <h2 class="final-cta-title">Ready to Automate Your Collections?</h2>
+                <p class="final-cta-description">
+                    Join 50+ merchants who have eliminated manual payment follow-ups forever
+                </p>
+                <div class="final-cta-buttons">
+                    <button class="btn btn-primary btn-lg">
+                        Book a Free Demo Today
+                        <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14"/>
+                            <path d="M12 5l7 7-7 7"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline btn-lg">Start Free Trial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">AutoCollect</h3>
+                    <p class="footer-description">
+                        Automate recurring payment collections with NPCI-compliant e-Mandates. 
+                        No cheques, no paperwork, no hassle.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#use-cases">Use Cases</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#documentation">Documentation</a></li>
+                        <li><a href="#merchant-login">Merchant Login</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 class="footer-heading">Contact</h4>
+                    <div class="footer-contact">
+                        <p>📧 support@autocollect.com</p>
+                        <p>📱 WhatsApp: +91 98765 43210</p>
+                        <p>🏢 Mumbai, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-compliance">
+                    <span>RBI Compliant</span>
+                    <span>NPCI Certified</span>
+                    <span>NACH Approved</span>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2024 AutoCollect. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA -->
+    <div class="floating-cta" id="floatingCTA">
+        <div class="floating-cta-content">
+            <button class="floating-dismiss" id="floatingDismiss">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 6L6 18"/>
+                    <path d="M6 6l12 12"/>
+                </svg>
+            </button>
+            <button class="floating-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                    <path d="M16 2v4"/>
+                    <path d="M8 2v4"/>
+                    <path d="M3 10h18"/>
+                </svg>
+            </button>
+            <div class="floating-tooltip">
+                Book a Free Demo
+                <div class="tooltip-arrow"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
