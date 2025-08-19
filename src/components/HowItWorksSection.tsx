@@ -5,16 +5,16 @@ export const HowItWorksSection = () => {
     {
       step: "01",
       icon: UserPlus,
-      title: "Setup e-Mandate",
-      description: "Customer completes one-time e-Mandate setup using Aadhaar, Debit Card, or Net Banking in under 5 minutes",
-      details: ["Fully digital process", "NPCI compliant", "Instant activation"]
+      title: "Your Quick Account Setup",
+      description: "Get your merchant account set up in minutes with minimal documentation and instant approval",
+      details: ["Quick registration", "Minimal documents", "Instant approval"]
     },
     {
       step: "02",
       icon: Settings,
-      title: "Configure Schedule",
-      description: "Set payment amount, frequency, and start date. Our system handles all the technical complexities",
-      details: ["Flexible scheduling", "Amount customization", "Automated setup"]
+      title: "Your Customer Registration",
+      description: "Your customers complete one-time e-Mandate setup using Aadhaar, Debit Card, or Net Banking in under 5 minutes",
+      details: ["Fully digital process", "NPCI compliant", "Instant activation"]
     },
     {
       step: "03",
@@ -26,7 +26,7 @@ export const HowItWorksSection = () => {
   ];
 
   return (
-    <section className="py-16 bg-background">
+    <section id="how-it-works" className="py-16 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

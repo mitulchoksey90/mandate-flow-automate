@@ -66,11 +66,11 @@ export const PricingSection = () => {
               {/* CTA */}
               <div className="space-y-4">
                 <Button variant="gradient" size="xl" className="w-full md:w-auto">
-                  Talk to Us for Custom Pricing
+                  Connect with Our Agents for Pricing Plans
                   <ArrowRight className="w-5 h-5" />
                 </Button>
                 <p className="text-sm text-muted-foreground">
-                  Volume discounts available • Enterprise plans for large businesses
+                  Custom pricing based on your business needs • Volume discounts available
                 </p>
               </div>
             </div>
