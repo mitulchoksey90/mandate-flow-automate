@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recurring Payments SaaS - Automate Collections</title>
+    <title>Hisab Clear - Automate Recurring Collections</title>
     <meta name="description" content="Collect recurring payments automatically with e-Mandates. No cheques, no paperwork, no hassle. NPCI compliant & RBI approved.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,6 +11,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <!-- Logo -->
+                <div class="nav-logo">
+                    <img id="logoImage" src="src/assets/logo-option-1.png" alt="Hisab Clear Logo" class="logo-img">
+                    <div class="logo-selector">
+                        <button class="logo-btn active" onclick="switchLogo(1)">Logo 1</button>
+                        <button class="logo-btn" onclick="switchLogo(2)">Logo 2</button>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="nav-menu">
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#how-it-works" class="nav-link">How It Works</a>
+                    <a href="#use-cases" class="nav-link">Use Cases</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Desktop CTA -->
+                <div class="nav-cta">
+                    <button class="btn btn-outline btn-sm">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        Contact Us
+                    </button>
+                    <button class="btn btn-primary btn-sm">Book Demo</button>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-nav-links">
+                    <a href="#features" class="mobile-nav-link" onclick="toggleMobileMenu()">Features</a>
+                    <a href="#how-it-works" class="mobile-nav-link" onclick="toggleMobileMenu()">How It Works</a>
+                    <a href="#use-cases" class="mobile-nav-link" onclick="toggleMobileMenu()">Use Cases</a>
+                    <a href="#pricing" class="mobile-nav-link" onclick="toggleMobileMenu()">Pricing</a>
+                    <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()">Contact</a>
+                </div>
+                <div class="mobile-nav-cta">
+                    <button class="btn btn-outline btn-sm mobile-btn">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        Contact Us
+                    </button>
+                    <button class="btn btn-primary btn-sm mobile-btn">Book Demo</button>
+                </div>
+            </div>
+        </div>
+    </nav>
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-decoration"></div>
@@ -82,7 +144,7 @@
                     <!-- CTA buttons -->
                     <div class="cta-buttons">
                         <button class="btn btn-primary">
-                            Book a Free Demo
+                            Book Demo
                             <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M5 12h14"/>
                                 <path d="M12 5l7 7-7 7"/>
@@ -387,13 +449,13 @@
             <div class="steps-grid">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3 class="step-title">Quick Setup</h3>
+                    <h3 class="step-title">Your Quick Account Setup</h3>
                     <p class="step-description">Register your business and integrate our API in minutes</p>
                 </div>
 
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3 class="step-title">Customer Registration</h3>
+                    <h3 class="step-title">Your Customer Registration</h3>
                     <p class="step-description">Customers create e-Mandates using Aadhaar, Debit Card, or Net Banking</p>
                 </div>
 
@@ -585,9 +647,8 @@
             <div class="pricing-card">
                 <h3 class="pricing-title">Pay Per Transaction</h3>
                 <div class="pricing-rate">
-                    <span class="currency">₹</span>
-                    <span class="amount">3</span>
-                    <span class="period">per successful transaction</span>
+                    <span class="pricing-subtitle">No monthly fees • No setup charges</span>
+                    <div class="pricing-amount">Competitive transaction rates starting from ₹2 per successful debit</div>
                 </div>
                 <div class="pricing-features">
                     <div class="pricing-feature">
@@ -595,31 +656,39 @@
                             <path d="M9 12l2 2 4-4"/>
                             <circle cx="12" cy="12" r="10"/>
                         </svg>
-                        <span>No setup fees or monthly charges</span>
+                        <span>Unlimited e-Mandate setups</span>
                     </div>
                     <div class="pricing-feature">
                         <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 12l2 2 4-4"/>
                             <circle cx="12" cy="12" r="10"/>
                         </svg>
-                        <span>Pay only for successful collections</span>
+                        <span>Automated retry system</span>
                     </div>
                     <div class="pricing-feature">
                         <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 12l2 2 4-4"/>
                             <circle cx="12" cy="12" r="10"/>
                         </svg>
-                        <span>All features included</span>
+                        <span>Real-time dashboard</span>
                     </div>
                     <div class="pricing-feature">
                         <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M9 12l2 2 4-4"/>
                             <circle cx="12" cy="12" r="10"/>
                         </svg>
-                        <span>24/7 customer support</span>
+                        <span>SMS, Email & WhatsApp notifications</span>
+                    </div>
+                    <div class="pricing-feature">
+                        <svg class="check-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4"/>
+                            <circle cx="12" cy="12" r="10"/>
+                        </svg>
+                        <span>24/7 technical support</span>
                     </div>
                 </div>
-                <button class="pricing-cta">Talk to Us for Custom Pricing</button>
+                <button class="pricing-cta">Connect with Our Agents for Pricing Plans</button>
+                <p class="pricing-note">Custom pricing based on your business needs • Volume discounts available</p>
             </div>
         </div>
     </section>
@@ -634,13 +703,13 @@
                 </p>
                 <div class="final-cta-buttons">
                     <button class="btn btn-primary btn-lg">
-                        Book a Free Demo Today
+                        Book Demo Today
                         <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M5 12h14"/>
                             <path d="M12 5l7 7-7 7"/>
                         </svg>
                     </button>
-                    <button class="btn btn-outline btn-lg">Start Free Trial</button>
+                    <button class="btn btn-outline btn-lg">Connect with Our Agents</button>
                 </div>
             </div>
         </div>
@@ -719,12 +788,37 @@
                 </svg>
             </button>
             <div class="floating-tooltip">
-                Book a Free Demo
+                Book Demo
                 <div class="tooltip-arrow"></div>
             </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script>
+        // Logo switching functionality
+        function switchLogo(logoNumber) {
+            const logoImage = document.getElementById('logoImage');
+            const logoButtons = document.querySelectorAll('.logo-btn');
+            
+            if (logoNumber === 1) {
+                logoImage.src = 'src/assets/logo-option-1.png';
+            } else {
+                logoImage.src = 'src/assets/logo-option-2.png';
+            }
+            
+            logoButtons.forEach(btn => btn.classList.remove('active'));
+            logoButtons[logoNumber - 1].classList.add('active');
+        }
+
+        // Mobile menu functionality
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            mobileMenu.classList.toggle('active');
+            menuBtn.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
